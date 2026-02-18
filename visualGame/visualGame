@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!--
+    This is an original work by dylan lopez, 000960296, March 18, 2025
+    I don't know if this is necessary for this class but I'm gonna do it anyways
+    I swear that this is my own work, and have not allowed anyone to copy my work
+-->
+    <title>Assignment 4</title>
+    <link href="bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assign4.js"></script>
+    <link rel="stylesheet" href="assign4.css">
+</head>
+
+<body>
+
+    <main>
+        <div id="gameHolder">
+            <svg id="game">
+                <rect x="0" y="0" height="700" width="1000" fill="lightGray"></rect>
+                <rect x="0" y="50" height="400" width="1000" fill="darkGray"></rect>
+                <text x="100" y="550" stroke="black" font-size="40">Stock price: $<tspan id="priceTracker"></tspan></text>
+                <text x="100" y="600" stroke="black" font-size="40">Cash On-Hand: $<tspan id="cashTracker"></tspan></text>
+                <text x="100" y="650" stroke="black" font-size="40">Stocks: <tspan id="stocks">0</tspan></text>
+                <line x1="0" x2="1000" y1="50" y2="50" stroke="lightGray"></line>
+                <line x1="0" x2="1000" y1="150" y2="150" stroke="lightGray"></line>
+                <line x1="0" x2="1000" y1="250" y2="250" stroke="lightGray"></line>
+                <line x1="0" x2="1000" y1="350" y2="350" stroke="lightGray"></line>
+                <line x1="0" x2="1000" y1="450" y2="450" stroke="lightGray"></line>
+                <text x="960" y="70" stroke="lightGray" fill="lightGray" font-size="20">450</text>
+                <text x="960" y="155" stroke="lightGray" fill="lightGray" font-size="20">350</text>
+                <text x="960" y="255" stroke="lightGray" fill="lightGray" font-size="20">250</text>
+                <text x="960" y="355" stroke="lightGray" fill="lightGray" font-size="20">150</text>
+                <text x="960" y="445" stroke="lightGray" fill="lightGray" font-size="20">50</text>
+                <rect x="650" y="470" height="100" width="300" fill="darkBlue" id="buy1"></rect>
+                <rect x="650" y="580" height="100" width="300" fill="darkBlue" id="buyAll"></rect>
+                <text x="750" y="540" stroke="lightGray" fill="lightGray" font-size="50">Buy 1</text>
+                <text x="700" y="650" stroke="lightGray" fill="lightGray" font-size="50">Buy Max</text>
+            </svg>
+            <button id="gameButton">Play</button>
+        </div>
+    </main>
+    <footer>
+        <p>Click the button to start the game</p>
+        <p>Click the top button to buy 1 stock, click the bottom button to buy max stock</p>
+        <p>Right click to sell all owned stock</p>
+        <p>Start Button transforms to a pause/play button after game starts. Disables the buy/sell functions when paused</p>
+        <p>Dylan Lopez, 000960296, COMP 10259, March 23rd, 2025 </p>
+    </footer>
+
+
+</body></html>
