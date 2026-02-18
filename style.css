@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin:0 5%;
+    background-color: #AEE8E8
+}
+header, nav, footer, main{
+    text-align: center;
+    padding: 20px 0;
+}
+main{
+    text-align: left;
+}
+nav a{
+    border: 3px solid gray;
+    padding:20px;
+    background-color: white;
+}
+nav{
+    padding-bottom: 40px;
+}
+.CurrentPage{
+    color:gray;
+}
+.animatedBorder:hover{
+    border: 3px solid red;
+    animation-name: rainbowBorderAnimation;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    box-shadow: 5px 10px;
+}
+.inbodyImageLeft{
+    float: left;
+    padding: 10px 10px 10px 0;
+}
+.inbodyImageRight{
+    float: right;
+    padding: 10px 0 10px 10px;
+}
+.row{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.row p, ul li{
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: #FEF8F8;
+}
+.row p{
+    padding: 20px 30px
+}
+ul li{
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+@keyframes rainbowBorderAnimation{
+    0%{
+        border-color: red;
+        border-radius: 0px;
+        box-shadow: 0 0 #00404C;
+    }
+    14%{
+        border-color: orange;
+    }
+    25%{
+        border-radius: 30px;
+        box-shadow: 5px 10px #001012;
+    }
+    28%{
+        border-color: yellow;
+    }
+    42%{
+        border-color: green;
+    }
+    50%{
+        border-radius: 0px;
+        box-shadow: 0 0 #00404C;
+    }
+    57%{
+        border-color: blue;
+    }
+    71%{
+        border-color: indigo;
+    }
+    75%{
+        border-radius: 30px;
+        box-shadow: 5px 10px #002025;
+    }
+    85%{
+        border-color: violet;
+    }
+    100%{
+        border-color: red;
+        border-radius: 0px;
+        box-shadow: 0 0 #00404C;
+    }
+}
